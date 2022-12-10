@@ -84,7 +84,7 @@ const ItemDetails = () => {
                               <img
                                 className="lazy"
                                 src={itemDetails.creatorImage}
-                                alt=""
+                                alt="image"
                               />
                               <i className="fa fa-check"></i>
                             </Link>
@@ -99,7 +99,7 @@ const ItemDetails = () => {
                       <div className="spacer-40"></div>
                       <h6>Price</h6>
                       <div className="nft-item-price">
-                        <img src={EthImage} alt="" />
+                        <img src={EthImage} alt="images" />
                         <span>{itemDetails.price}</span>
                       </div>
                     </div>
