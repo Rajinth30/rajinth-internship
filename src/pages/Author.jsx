@@ -43,7 +43,7 @@ const Author = () => {
                   <div className="de-flex-col">
                     <div className="profile_avatar">
                       {authorData ? (
-                        <img src={authorData.authorImage} alt="" />
+                        <img src={authorData.authorImage} alt="authorImage" />
                       ) : (
                         <Skeleton
                           width="150px"
