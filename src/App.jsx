@@ -15,7 +15,8 @@ function App() {
       duration: 1000,
       once: true,
     });
-  },[])
+    AOS.refresh();
+  }, []);
   return (
     <Router>
       <Nav />
