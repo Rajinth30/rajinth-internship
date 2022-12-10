@@ -7,7 +7,7 @@ import Skeleton from "../components/UI/Skeleton";
 
 const Author = () => {
   const [authorData, setAuthorData] = useState("");
-  const id = useParams().id;
+  const { id }= useParams();
   const [following, setFollowing] = useState(false);
 
   const getAuthorData = useCallback(async () => {
