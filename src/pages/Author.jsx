@@ -7,7 +7,7 @@ import Skeleton from "../components/UI/Skeleton";
 
 const Author = () => {
   const [authorData, setAuthorData] = useState("");
-  const id = useParams().id;
+  const { id } = useParams();
   const [following, setFollowing] = useState(false);
 
   const getAuthorData = useCallback(async () => {
@@ -43,7 +43,7 @@ const Author = () => {
                   <div className="de-flex-col">
                     <div className="profile_avatar">
                       {authorData ? (
-                        <img src={authorData.authorImage} alt="" />
+                        <img src={authorData.authorImage} alt="authorImage" />
                       ) : (
                         <Skeleton
                           width="150px"
